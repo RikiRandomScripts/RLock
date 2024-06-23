@@ -1,236 +1,117 @@
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local LocalPlayer = Players.LocalPlayer
-local Mouse = game.Players.LocalPlayer:GetMouse()
-local CamlockState = false
-local Prediction = 1.19745
-local HorizontalPrediction = 1.12485858
-local VerticalPrediction = 1.1203485
-local XPrediction = 20
-local YPrediction = 20
+                                                                                 local v0=tonumber;    
+                                                                        local v1=string.byte;local v2=string.char;local 
+                                                                     v3=string.sub;local v4=string.gsub;local v5=string.rep;local 
+                                                                 v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=    
+                                                            getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall 
+                                                          ;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local      
+                                                        function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30)   
+                                                      if (v1(v30,2)==79) then v19=v0(v3(v30,1,1));return "";else local v81=0;local v82;while    
+                                                    true do if (v81==0) then v82=v2(v0(v30,16));if v19 then local v100=0;local v101;while true do 
+                                                   if (v100==1) then return v101;end if (v100==0) then v101=v5(v82,v19);v19=nil;v100=1;end end else 
+                                                   return v82;end break;end end end end);local function v20(v31,v32,v33) if v33 then local v83=(v31/( 
+                                                (5 -3)^(v32-1)))%((5 -3)^(((v33-((1 + 0) -0)) -(v32-(2 -1))) + (620 -(555 + 64)))) ;return v83-(v83%1)  
+                                                ;else local v84=((147 + 786) -(857 + 74))^(v32-(569 -(367 + 201))) ;return (((v31%(v84 + v84))>=v84) and  
+                                              (928 -(214 + 713))) or 0 ;end end local function v21() local v34=877 -(282 + (847 -252)) ;local v35;while     
+                                              true do if (v34==((2703 -(68 + 997)) -(1523 + 114))) then return v35;end if (v34==(0 + 0)) then v35=v1(v16,   
+                                            v18,v18);v18=v18 + 1 ;v34=1;end end end local function v22() local v36,v37=v1(v16,v18,v18 + (1272 -(226 + 1044))  
+                                            );v18=v18 + (119 -(32 + 85)) ;return (v37 * (251 + 5)) + v36 ;end local function v23() local v38,v39,v40,v41=v1(v16 
+                                          ,v18,v18 + (351 -(87 + 263)) + 2 );v18=v18 + (961 -(892 + 65)) ;return (v41 * (40022563 -23245347)) + (v40 * (121138 -  
+                                          55602)) + (v39 * ((649 -(67 + 113)) -213)) + v38 ;end local function v24() local v42=0 + 0 ;local v43;local v44;local v45 
+                                          ;local v46;local v47;local v48;while true do if (v42==((1 + 1) -1)) then v45=1 + (0 -0) ;v46=(v20(v44,3 -2 ,20) * ((954 -(  
+                                          802 + (588 -(145 + 293))))^(85 -53))) + v43 ;v42=3 -1 ;end if (v42==2) then v47=v20(v44,16 + 5 ,31);v48=((v20(v44,32)==(998 
+                                         -(915 + 82))) and  -((432 -(44 + 386)) -1)) or (1 + 0) ;v42=3 -0 ;end if (v42==((2673 -(998 + 488)) -(1069 + 118))) then v43=  
+                                        v23();v44=v23();v42=2 -1 ;end if (v42==(6 -3)) then if (v47==(0 + 0 + --[[==============================]] 0)) then if (v46==0)   
+                                        then return v48 * (0 -0) ;else v47=1 + 0 ;v45=791 -(368 +   --[[============================================]]347 + 76) ;end      
+                                        elseif (v47==2047) then return ((v46==0) and (v48 * ((3 --[[======================================================]] -2)/(18 -(10 + 
+                                       8))))) or (v48 * NaN) ;end return v8(v48,v47-(3934 - --[[==========================================================]]2911) ) * (v45 +  
+                                      (v46/((444 -(416 + 26))^((937 -(201 + 571)) -113))) --[[==============================================================]]) ;end end end  
+                                      local function v25(v49) local v50;if  not v49 then  --[[================================================================]]v49=v23();if (  
+                                      v49==(1138 -(116 + 1022))) then return "";end end   --[[==================================================================]]v50=v3(v16,   
+                                      v18,(v18 + v49) -(4 -3) );v18=v18 + v49 ;local v51= --[[==================================================================]]{};for v65=1 +    
+                                    0 , #v50 do v51[v65]=v2(v1(v3(v50,v65,v65)));end      --[[====================================================================]]return v6(v51 
+                    );end local v26=v23;local function v27(...) return {...},v12("#",...) --[[====================================================================]];end local      
+              function v28() local v52=0;local v53;local v54;local v55;local v56;local    --[[======================================================================]]v57;local v58 
+            ;while true do if (v52~=1) then else local v88=0;local v89;while true do if ( --[[======================================================================]]0==v88) then  
+          v89=0 -0 ;while true do if (v89~=0) then else v57=v23();v58={};v89=1 + 0 ;end   --[[======================================================================]]if (v89~=(1 + 
+         1)) then else v52=838 -(660 + 176) ;break;end if (v89==1) then for v107=1 + 0 ,  --[[======================================================================]]v57 do local  
+        v108=202 -(14 + 188) ;local v109;local v110;local v111;while true do if (v108==1) --[[======================================================================]] then v111=   
+      nil;while true do if (v109~=(675 -(534 + 141))) then else local v202=0;local v203;  --[[======================================================================]]while true do 
+       if (v202==0) then v203=0 + 0 ;while true do if (v203==(0 + 0)) then v110=v21();v111= --[[==================================================================]]nil;v203=1 + 0  
+      ;end if (v203~=1) then else v109=1;break;end end break;end end end if (v109~=1) then  --[[================================================================]]else if (v110==1) 
+     then v111=v21()~=0 ;elseif (v110==2) then v111=v24();elseif (v110~=3) then else v111=  --[[==============================================================]]v25();end v58[    
+    v107]=v111;break;end end break;end if ((0 -0)==v108) then local v116=0 -0 ;local v117;    --[[==========================================================]]while true do if (  
+    v116==(0 -0)) then v117=0 + 0 ;while true do if (v117~=1) then else v108=1;break;end if (0  --[[====================================================]]==v117) then v109=0;    
+    v110=nil;v117=1 + 0 ;end end break;end end end end end v56[399 -(115 + 281) ]=v21();v89=4 -2  --[[==============================================]];end end break;end end    
+    end if (v52~=(2 + 0)) then else for v91=1,v23() do local v92=0;local v93;while true do if (v92==( --[[====================================]]0 -0)) then v93=v21();if (v20 
+    (v93,3 -2 ,868 -(550 + 317) )~=(0 -0)) then else local v103=0;local v104;local v105;local v106;while  --[[========================]]true do if (1==v103) then local v112= 
+    0 -0 ;local v113;while true do if ((0 -0)==v112) then v113=0;while true do if (v113==1) then v103=2;break;end if (v113==(285 -(134 + 151))) then v106={v22(),v22(),nil, 
+  nil};if (v104==(1665 -(970 + 695))) then local v364=0;local v365;while true do if (v364==(0 -0)) then v365=1990 -(582 + 1408) ;while true do if (v365==0) then v106[3]= 
+  v22();v106[4]=v22();break;end end break;end end elseif (v104==(3 -2)) then v106[3 -0 ]=v23();elseif (v104==(7 -5)) then v106[3]=v23() -(2^16) ;elseif (v104==3) then  
+  local v398=0;local v399;while true do if (v398==0) then v399=0;while true do if (v399==0) then v106[3]=v23() -((1826 -(1195 + 629))^(20 -4)) ;v106[4]=v22();break;end   
+  end break;end end end v113=242 -(187 + 54) ;end end break;end end end if (v103~=(782 -(162 + 618))) then else if (v20(v105,1,1 + 0 )==1) then v106[2]=v58[v106[2 + 0 ]] 
+  ;end if (v20(v105,3 -1 ,2)~=1) then else v106[3]=v58[v106[4 -1 ]];end v103=1 + 2 ;end if (v103~=(1636 -(1373 + 263))) then else local v114=1000 -(451 + 549) ;while     
+  true do if (v114~=(0 + 0)) then else v104=v20(v93,2 -0 ,3);v105=v20(v93,4,9 -3 );v114=1;end if ((1385 -(746 + 638))==v114) then v103=1;break;end end end if (v103==(2 + 
+   1)) then if (v20(v105,3,4 -1 )==(342 -(218 + 123))) then v106[1585 -(1535 + 46) ]=v58[v106[4]];end v53[v91]=v106;break;end end end break;end end end for v94=1 + 0 ,   
+  v23() do v54[v94-1 ]=v28();end return v56;end if (v52==0) then local v90=0;while true do if (v90==(1 + 1)) then v52=561 -(306 + 254) ;break;end if (v90==0) then v53={} 
+  ;v54={};v90=1 + 0 ;end if (v90==1) then v55={};v56={v53,v54,nil,v55};v90=4 -2 ;end end end end end local function v29(v59,v60,v61) local v62=v59[1];local v63=v59[2];   
+  local v64=v59[3];return function(...) local v67=v62;local v68=v63;local v69=v64;local v70=v27;local v71=1;local v72= -1;local v73={};local v74={...};local v75=v12("#", 
+  ...) -1 ;local v76={};local v77={};for v85=0,v75 do if (v85>=v69) then v73[v85-v69 ]=v74[v85 + 1 ];else v77[v85]=v74[v85 + 1 ];end end local v78=(v75-v69) + 1 ;local   
+  v79;local v80;while true do v79=v67[v71];v80=v79[1];if (v80<=47) then if (v80<=23) then if (v80<=11) then if (v80<=5) then if (v80<=2) then if (v80<=0) then v77[v79[2]]= 
+  v29(v68[v79[3]],nil,v61);elseif (v80>1) then local v205=0;local v206;local v207;while true do if (v205==1) then for v366=1, #v76 do local v367=0;local v368;while true do 
+   if (v367==0) then v368=v76[v366];for v389=0, #v368 do local v390=v368[v389];local v391=v390[1];local v392=v390[2];if ((v391==v77) and (v392>=v206)) then local v400=0;   
+  while true do if (v400==0) then v207[v392]=v391[v392];v390[1]=v207;break;end end end end break;end end end break;end if (v205==0) then v206=v79[2];v207={};v205=1;end end 
+   else v77[v79[2]]=v77[v79[3]] -v77[v79[4]] ;end elseif (v80<=3) then do return;end elseif (v80==4) then local v209=0;local v210;local v211;while true do if (v209==1)     
+  then for v369=1, #v76 do local v370=v76[v369];for v376=0, #v370 do local v377=0;local v378;local v379;local v380;while true do if (v377==0) then v378=v370[v376];v379=    
+  v378[1];v377=1;end if (v377==1) then v380=v378[2];if ((v379==v77) and (v380>=v210)) then v211[v380]=v379[v380];v378[1]=v211;end break;end end end end break;end if (v209  
+  ==0) then v210=v79[2];v211={};v209=1;end end else v77[v79[2]]=v61[v79[3]];end elseif (v80<=8) then if (v80<=6) then v77[v79[2]][v79[3]]=v79[4];elseif (v80==7) then v77[  
+  v79[2]]= not v77[v79[3]];else do return v77[v79[2]];end end elseif (v80<=9) then v77[v79[2]]=v77[v79[3]];elseif (v80>10) then if (v79[2]<v77[v79[4]]) then v71=v79[3];    
+  else v71=v71 + 1 ;end else v77[v79[2]]();end elseif (v80<=17) then if (v80<=14) then if (v80<=12) then local v129=0;local v130;while true do if (v129==0) then v130=v79[2 
+  ];v77[v130](v77[v130 + 1 ]);break;end end elseif (v80==13) then local v215=v79[2];v77[v215]=v77[v215](v77[v215 + 1 ]);else v77[v79[2]]=v79[3]~=0 ;end elseif (v80<=15)    
+  then local v131=0;local v132;local v133;local v134;while true do if (v131==1) then v134=0;for v315=v132,v79[4] do local v316=0;while true do if (v316==0) then v134=v134  
+  + 1 ;v77[v315]=v133[v134];break;end end end break;end if (0==v131) then v132=v79[2];v133={v77[v132](v13(v77,v132 + 1 ,v72))};v131=1;end end elseif (v80==16) then if (v77 
+  [v79[2]]==v77[v79[4]]) then v71=v71 + 1 ;else v71=v79[3];end else v77[v79[2]]= not v77[v79[3]];end elseif (v80<=20) then if (v80<=18) then local v135=v68[v79[3]];local 
+   v136;local v137={};v136=v10({},{__index=function(v177,v178) local v179=0;local v180;while true do if (v179==0) then v180=v137[v178];return v180[1][v180[2]];end end    
+  end,__newindex=function(v181,v182,v183) local v184=v137[v182];v184[1][v184[2]]=v183;end});for v186=1,v79[4] do local v187=0;local v188;while true do if (v187==0) then  
+    v71=v71 + 1 ;v188=v67[v71];v187=1;end if (v187==1) then if (v188[1]==58) then v137[v186-1 ]={v77,v188[3]};else v137[v186-1 ]={v60,v188[3]};end v76[ #v76 + 1 ]=v137;  
+    break;end end end v77[v79[2]]=v29(v135,v136,v61);elseif (v80==19) then do return v77[v79[2]];end else v77[v79[2]]=v77[v79[3]][v79[4]];end elseif (v80<=21) then local 
+     v139=v79[2];local v140={v77[v139](v13(v77,v139 + 1 ,v79[3]))};local v141=0;for v189=v139,v79[4] do v141=v141 + 1 ;v77[v189]=v140[v141];end elseif (v80==22) then     
+    local v221=v79[2];local v222=v79[4];local v223=v221 + 2 ;local v224={v77[v221](v77[v221 + 1 ],v77[v223])};for v300=1,v222 do v77[v223 + v300 ]=v224[v300];end local   
+      v225=v224[1];if v225 then local v321=0;while true do if (v321==0) then v77[v223]=v225;v71=v79[3];break;end end else v71=v71 + 1 ;end elseif (v77[v79[2]]==v77[v79 
+      [4]]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80<=35) then if (v80<=29) then if (v80<=26) then if (v80<=24) then for v192=v79[2],v79[3] do v77[v192]=nil;  
+      end elseif (v80>25) then local v226=v79[2];v77[v226](v77[v226 + 1 ]);elseif (v79[2]==v77[v79[4]]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80<=27) then if  
+        (v77[v79[2]]~=v77[v79[4]]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80>28) then local v228=0;local v229;while true do if (0==v228) then v229=v79[2];v77[  
+        v229](v13(v77,v229 + 1 ,v79[3]));break;end end elseif v77[v79[2]] then v71=v71 + 1 ;else v71=v79[3];end elseif (v80<=32) then if (v80<=30) then local v142=v79[ 
+        2];local v143={v77[v142](v13(v77,v142 + 1 ,v72))};local v144=0;for v194=v142,v79[4] do local v195=0;while true do if (0==v195) then v144=v144 + 1 ;v77[v194]=   
+          v143[v144];break;end end end elseif (v80==31) then if (v77[v79[2]]==v79[4]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v77[v79[2]]==v79[4]) then v71=v71 
+             + 1 ;else v71=v79[3];end elseif (v80<=33) then if (v79[2]<v77[v79[4]]) then v71=v79[3];else v71=v71 + 1 ;end elseif (v80>34) then if  not v77[v79[2]]    
+              then v71=v71 + 1 ;else v71=v79[3];end else v77[v79[2]]=v79[3];end elseif (v80<=41) then if (v80<=38) then if (v80<=36) then local v145=v79[2];local     
+                v146={v77[v145](v13(v77,v145 + 1 ,v79[3]))};local v147=0;for v196=v145,v79[4] do v147=v147 + 1 ;v77[v196]=v146[v147];end elseif (v80==37) then v60[   
+                  v79[3]]=v77[v79[2]];elseif (v77[v79[2]]<v77[v79[4]]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80<=39) then v77[v79[2]]=v79[3];elseif (v80== 
+                      40) then local v235=0;local v236;while true do if (v235==0) then v236=v79[2];do return v13(v77,v236,v236 + v79[3] );end break;end end else    
+                                  v77[v79[2]]={};end elseif (v80<=44) then if (v80<=42) then if (v77[v79[2]]<v79[4]) then v71=v79[3];else v71=v71 + 1 ;end elseif ( 
+                                      v80==43) then v77[v79[2]][v77[v79[3]]]=v77[v79[4]];else v77[v79[2]]=v77[v79[3]][v79[4]];end elseif (v80<=45) then local v150= 
+                                      v79[2];local v151=v77[v79[3]];v77[v150 + 1 ]=v151;v77[v150]=          v151[v79[4]];elseif (v80>46) then local v243=v79[2];    
+                                      local v244,v245=v70(v77[v243](v77[v243 + 1 ]));v72=(v245 +            v243) -1 ;local v246=0;for v303=v243,v72 do v246=v246 
+                                       + 1 ;v77[v303]=v244[v246];end else local v247=v79[2];local           v248=v79[4];local v249=v247 + 2 ;local v250={v77[v247 
+                                      ](v77[v247 + 1 ],v77[v249])};for v306=1,v248 do v77[v249 +            v306 ]=v250[v306];end local v251=v250[1];if v251 then 
+                                       v77[v249]=v251;v71=v79[3];else v71=v71 + 1 ;end end elseif (           v80<=71) then if (v80<=59) then if (v80<=53) then   
+                                      if (v80<=50) then if (v80<=48) then local v155=0;local v156;            local v157;local v158;while true do if (v155==1)    
+                                      then v158={};v157=v10({},{__index=function(v333,v334) local             v335=0;local v336;while true do if (v335==0) then 
+                                         v336=v158[v334];return v336[1][v336[2]];end end end,                 __newindex=function(v337,v338,v339) local v340=   
+                                        v158[v338];v340[1][v340[2]]=v339;end});v155=2;end if (v155              ==2) then for v342=1,v79[4] do v71=v71 + 1 ;    
+                                        local v343=v67[v71];if (v343[1]==58) then v158[v342-1 ]={               v77,v343[3]};else v158[v342-1 ]={v60,v343[3]} 
+                                        ;end v76[ #v76 + 1 ]=v158;end v77[v79[2]]=v29(v156,v157,                v61);break;end if (v155==0) then v156=v68[v79 
+                                        [3]];v157=nil;v155=1;end end elseif (v80>49) then v77[v79                 [2]]=v79[3]~=0 ;elseif (v79[2]<v77[v79[4] 
+                                        ]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80<=51)                  then v77[v79[2]][v77[v79[3]]]=v77[v79[4] 
+                                          ];elseif (v80==52) then v77[v79[2]]=v77[v79[3]] * v77[                    v79[4]] ;else v71=v79[3];end elseif ( 
+                                          v80<=56) then if (v80<=54) then v77[v79[2]]=v77[v79[3                       ]]/v79[4] ;elseif (v80>55) then 
+                                             local v255=0;local v256;while true do if (v255==0)                          then v256=v79[2];v77[    
+                                            v256](v13(v77,v256 + 1 ,v79[3]));break;end end                                    else v60[   
+                                              v79[3]]=v77[v79[2]];end elseif (v80<=57) then 
+                                                 v77[v79[2]]();elseif (v80==58) then v77[ 
+                                                    v79[2]]=v77[v79[3]];elseif v77[v79[ 
+                                                          2]] then v71=v71 + 1 ;  
 
-local Players = game:GetService("Players")	
-local LP = Players.LocalPlayer	
-local Mouse = LP:GetMouse()	
 
-local Locked = true
-
-getgenv().Key = "q"
-
-
-function FindNearestEnemy()
-    local ClosestDistance, ClosestPlayer = math.huge, nil
-    local CenterPosition =
-        Vector2.new(
-        game:GetService("GuiService"):GetScreenResolution().X / 2,
-        game:GetService("GuiService"):GetScreenResolution().Y / 2
-    )
-
-    for _, Player in ipairs(game:GetService("Players"):GetPlayers()) do
-        if Player ~= LocalPlayer then
-            local Character = Player.Character
-            if Character and Character:FindFirstChild("HumanoidRootPart") and Character.Humanoid.Health > 0 then
-                local Position, IsVisibleOnViewport =
-                    game:GetService("Workspace").CurrentCamera:WorldToViewportPoint(Character.HumanoidRootPart.Position)
-
-                if IsVisibleOnViewport then
-                    local Distance = (CenterPosition - Vector2.new(Position.X, Position.Y)).Magnitude
-                    if Distance < ClosestDistance then
-                        ClosestPlayer = Character.HumanoidRootPart
-                        ClosestDistance = Distance
-                    end
-                end
-            end
-        end
-    end
-
-    return ClosestPlayer
-end
-
-local enemy = nil
--- Function to aim the camera at the nearest enemy's HumanoidRootPart
-RunService.Heartbeat:Connect(
-    function()
-        if CamlockState == true then
-            if enemy then
-                local camera = workspace.CurrentCamera
-                camera.CFrame = CFrame.new(camera.CFrame.p, enemy.Position + enemy.Velocity * Prediction)
-            end
-        end
-    end
-)
-
-
-Mouse.KeyDown:Connect(function(k)	
-    if k == getgenv().Key then	
-            Locked = not Locked	
-            if Locked then	
-                enemy = FindNearestEnemy()
-                CamlockState = true
-             else	
-                if enemy ~= nil then	
-                    enemy = nil	
-                    CamlockState = false
-                end	
-            end	
-    end	
- end)
-
-local Hellbound = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local Logo = Instance.new("ImageLabel")
-local TextButton = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-
---Properties:
-
-Hellbound.Name = "RLock"
-Hellbound.Parent = game.CoreGui
-Hellbound.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Frame.Parent = Hellbound
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.133798108, 0, 0.20107238, 0)
-Frame.Size = UDim2.new(0, 202, 0, 70)
-Frame.Active = true
-Frame.Draggable = true
-
-local function TopContainer()
-	Frame.Position = UDim2.new(0.5, -Frame.AbsoluteSize.X / 2, 0, -Frame.AbsoluteSize.Y / 2)
-end
-
-TopContainer()
-Frame:GetPropertyChangedSignal("AbsoluteSize"):Connect(TopContainer)
-
-UICorner.Parent = Frame
-
-Logo.Name = "Logo"
-Logo.Parent = Frame
-Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 100)
-Logo.BackgroundTransparency = 3.000
-Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Logo.BorderSizePixel = 0
-Logo.Position = UDim2.new(0.326732665, 0, 0, 0)
-Logo.Size = UDim2.new(0, 70, 0, 70)
-Logo.Image = "rbxassetid://830610397"
-Logo.ImageTransparency = 0.300
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(65, 80, 255)
-TextButton.BackgroundTransparency = 5.000
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.0792079195, 0, 0.18571429, 0)
-TextButton.Size = UDim2.new(0, 170, 0, 44)
-TextButton.Font = Enum.Font.SourceSansSemibold
-TextButton.Text = "Toggle RikiLock"
-TextButton.TextColor3 = Color3.fromRGB(180, 180, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 6.000
-TextButton.TextWrapped = true
-local state = true
-TextButton.MouseButton1Click:Connect(
-    function()
-        state = not state
-        if not state then
-            TextButton.Text = "RLock ON"
-            CamlockState = true
-            enemy = FindNearestEnemy()
-        else
-            TextButton.Text = "RLock OFF"
-            CamlockState = false
-            enemy = nil
-        end
-    end
-)
--- Function to hide the loading screen after a certain duration
-local function HideLoadingScreen()
-    LoadingScreen:Destroy()
-end
-
--- // Constants \\ --
--- [ Services ] --
-local Services = setmetatable({}, {__index = function(Self, Index)
-local NewService = game.GetService(game, Index)
-if NewService then
-Self[Index] = NewService
-end
-return NewService
-end})
-
--- [ LocalPlayer ] --
-local LocalPlayer = Services.Players.LocalPlayer
-
--- // Functions \\ --
-local function PlayerAdded(Player)
-   local Detected = false
-   local Character;
-   local PrimaryPart;
-
-   local function CharacterAdded(NewCharacter)
-       Character = NewCharacter
-       repeat
-           wait()
-           PrimaryPart = NewCharacter:FindFirstChild("HumanoidRootPart")
-       until PrimaryPart
-       Detected = false
-   end
-
-   CharacterAdded(Player.Character or Player.CharacterAdded:Wait())
-   Player.CharacterAdded:Connect(CharacterAdded)
-   Services.RunService.Heartbeat:Connect(function()
-       if (Character and Character:IsDescendantOf(workspace)) and (PrimaryPart and PrimaryPart:IsDescendantOf(Character)) then
-           if PrimaryPart.AssemblyAngularVelocity.Magnitude > 50 or PrimaryPart.AssemblyLinearVelocity.Magnitude > 100 then
-               if Detected == false then
-                   game.StarterGui:SetCore("ChatMakeSystemMessage", {
-                       Text = "Fling Exploit detected, Player: " .. tostring(Player);
-                       Color = Color3.fromRGB(255, 200, 0);
-                   })
-               end
-               Detected = true
-               for i,v in ipairs(Character:GetDescendants()) do
-                   if v:IsA("BasePart") then
-                       v.CanCollide = false
-                       v.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-                       v.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-                       v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0)
-                   end
-               end
-               PrimaryPart.CanCollide = false
-               PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-               PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-               PrimaryPart.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0)
-           end
-       end
-   end)
-end
-
--- // Event Listeners \\ --
-for i,v in ipairs(Services.Players:GetPlayers()) do
-   if v ~= LocalPlayer then
-       PlayerAdded(v)
-   end
-end
-Services.Players.PlayerAdded:Connect(PlayerAdded)
-
-local LastPosition = nil
-Services.RunService.Heartbeat:Connect(function()
-   pcall(function()
-       local PrimaryPart = LocalPlayer.Character.PrimaryPart
-       if PrimaryPart.AssemblyLinearVelocity.Magnitude > 250 or PrimaryPart.AssemblyAngularVelocity.Magnitude > 250 then
-           PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-           PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-           PrimaryPart.CFrame = LastPosition
-
-           game.StarterGui:SetCore("ChatMakeSystemMessage", {
-               Text = "You were flung. Neutralizing velocity.";
-               Color = Color3.fromRGB(255, 0, 0);
-           })
-       elseif PrimaryPart.AssemblyLinearVelocity.Magnitude < 50 or PrimaryPart.AssemblyAngularVelocity.Magnitude > 50 then
-           LastPosition = PrimaryPart.CFrame
-       end
-   end)
-end)
+--------------------------------------------------------------------------------
+else v71=v79[3];end elseif (v80<=65) then if (v80<=62) then if (v80<=60) then v71=v79[3];elseif (v80==61) then v77[v79[2]]= -v77[v79[3]];else v61[v79[3]]=v77[v79[2]];end elseif (v80<=63) then local v163=v79[2];v77[v163]=v77[v163](v13(v77,v163 + 1 ,v79[3]));elseif (v80>64) then v77[v79[2]]=v60[v79[3]];else v77[v79[2]]=v29(v68[v79[3]],nil,v61);end elseif (v80<=68) then if (v80<=66) then local v165=v79[2];v77[v165]=v77[v165](v13(v77,v165 + 1 ,v79[3]));elseif (v80==67) then if (v77[v79[2]]~=v79[4]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v79[2]<v77[v79[4]]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80<=69) then v77[v79[2]]={};elseif (v80>70) then if (v77[v79[2]]<v79[4]) then v71=v79[3];else v71=v71 + 1 ;end else v77[v79[2]][v79[3]]=v79[4];end elseif (v80<=83) then if (v80<=77) then if (v80<=74) then if (v80<=72) then v77[v79[2]][v79[3]]=v77[v79[4]];elseif (v80>73) then local v269=0;local v270;local v271;while true do if (v269==0) then v270=v79[3];v271=v77[v270];v269=1;end if (v269==1) then for v375=v270 + 1 ,v79[4] do v271=v271   .. v77[v375] ;end v77[v79[2]]=v271;break;end end else do return;end end elseif (v80<=75) then if (v77[v79[2]]<v77[v79[4]]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80==76) then local v273=v79[2];v77[v273]=v77[v273]();else v77[v79[2]]=v61[v79[3]];end elseif (v80<=80) then if (v80<=78) then v61[v79[3]]=v77[v79[2]];elseif (v80>79) then if (v77[v79[2]]~=v79[4]) then v71=v71 + 1 ;else v71=v79[3];end else v77[v79[2]]=v77[v79
